@@ -5,6 +5,7 @@ A POSIX `cat` in JavaScript.
 [![NPM](https://nodei.co/npm/posix-cat.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/posix-cat/)
 
 [![build status](https://secure.travis-ci.org/shama/posix-cat.svg)](https://travis-ci.org/shama/posix-cat)
+[![Build status](https://ci.appveyor.com/api/projects/status/c15rf5fkw1g1cfqd)](https://ci.appveyor.com/project/shama/posix-cat)
 [![NPM version](https://badge.fury.io/js/posix-cat.svg)](https://badge.fury.io/js/posix-cat)
 
 <!-- [![browser support][https://ci.testling.com/shama/posix-cat.png]][https://ci.testling.com/shama/posix-cat] -->
