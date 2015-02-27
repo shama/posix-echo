@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.12'
+- 'iojs'
+before_install:
+- npm install npm -g
+before_script:
+- npm install
+script: npm run travis-test
+addons:
+  sauce_connect: true
+env:
+  global:
+  - secure: ecpb3X41JH4xzsndbiEt+shblCQiFTCodS8grmk7HBAVWFdD+GRneTRt8PkgR5P9+JNP7+xAfsA8Eg9oVTcmy3fDAi6ESiJ3bOE54ADroDMZLtlnPV5GZAzzOWI2G5/U6+68/DMUJ1me+q9Hded6hnMbq7B8BMzbQXmzlq7B++8=
+  - secure: OIrPLsQxXfxG1E4Ur4kePl7WNbbM82g44FNjs93bTsvS6FqgszEKtvGG0BXlJ8qByx5RNY3kfHO2h6YcYIOVLrr9m6bwEjLUMfzfNlQaemms52RHMH4lWehA/oigKwmHZLWHxF4swnjl+j9e5sxZzq/+TCumIm60rK3e0Ts/X/g=

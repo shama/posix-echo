@@ -1,5 +1,6 @@
 var test = require('tape')
-var Cat = require('../index.js')
+var Cat = require('../posix-cat.js')
+var fs = process.browser ? require('./virtual-fs.js') : require('fs')
 
 function assertResult(s, cb) {
   var result = ''
@@ -14,6 +15,7 @@ test('concat files', function(t) {
   t.plan(1)
   var cat = new Cat({
     _: ['test/fixtures/one.js', 'test/fixtures/two.js'],
+    fs: fs,
   })
   cat.write('// before\n')
   assertResult(cat, function(result) {
