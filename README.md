@@ -1,4 +1,4 @@
-# [posix-cat](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html)
+# [posix-cat](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html) :cat2:
 
 A POSIX `cat` in JavaScript.
 
