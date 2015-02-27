@@ -1,6 +1,5 @@
 var test = require('tape')
-var Cat = require('../posix-cat.js')
-var fs = process.browser ? require('./virtual-fs.js') : require('fs')
+var Echo = require('../posix-echo.js')
 
 function assertResult(s, cb) {
   var result = ''
@@ -11,14 +10,20 @@ function assertResult(s, cb) {
   })
 }
 
-test('concat files', function(t) {
+test('echo nothing', function(t) {
   t.plan(1)
-  var cat = new Cat({
-    _: ['test/fixtures/one.js', 'test/fixtures/two.js'],
-    fs: fs,
+  var echo = new Echo()
+  assertResult(echo, function(result) {
+    t.equal(result, '\n')
   })
-  cat.write('// before\n')
-  assertResult(cat, function(result) {
-    t.equal(result, '// before\nvar one = true;\nvar two = true;\n')
+})
+
+test('echo strings', function(t) {
+  t.plan(1)
+  var echo = new Echo({
+    _: ['one', 'two'],
+  })
+  assertResult(echo, function(result) {
+    t.equal(result, 'one two\n')
   })
 })

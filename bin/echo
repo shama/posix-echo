@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+process.title = 'echo'
+
+var argv = require('yargs').argv
+var echo = require('../index.js')(argv)
+
+echo.pipe(process.stdout)
