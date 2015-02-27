@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "node test/test.js",
-    "test-browser": "zuul -- test/test.js",
-    "travis-test": "npm test && npm run test-browser"
+    "test-browser": "zuul -- test/test.js"
   },
   "repository": {
     "type": "git",
