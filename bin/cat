@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+process.title = 'cat'
+
+var argv = require('yargs').argv
+var cat = require('../index.js')(argv)
+
+process.stdin.pipe(cat).pipe(process.stdout)
+cat.on('end', process.stdin.end.bind(process.stdin))
