@@ -1,7 +1,7 @@
 var Transform = require('readable-stream/transform')
 var inherits = require('inherits')
 var xtend = require('xtend')
-var nextback = require('nextback')
+var nextTick = require('next-tick')
 
 function Cat(argv) {
   if (!(this instanceof Cat)) return new Cat(argv)
@@ -16,12 +16,12 @@ function Cat(argv) {
     get: function() { return self.params.fs || require('fs') }
   })
   if (self.params._.length > 0) {
-    nextback(function() {
-      var fs = self.fs
+    nextTick(function() {
+      var fs = self.params.fs
       for (var i = 0; i < self.params._.length; ++i) {
         fs.createReadStream(self.params._[i]).pipe(self)
       }
-    })()
+    })
   }
 }
 module.exports = Cat
