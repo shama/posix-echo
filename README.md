@@ -20,10 +20,10 @@ echo "hi" > msg.file
 ## API
 
 ```js
-var echo = require('posix-echo')
+var Echo = require('posix-echo')
 ```
 
-### `var echo = new echo(argv)`
+### `var echo = new Echo(argv)`
 Returns a transform stream. `argv` can be:
 
 * `_`: An array of arguments to echo; such as `echo one two three`
