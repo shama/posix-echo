@@ -4,8 +4,8 @@ A POSIX `cat` in JavaScript.
 
 [![NPM](https://nodei.co/npm/posix-cat.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/posix-cat/)
 
-[![build status][https://secure.travis-ci.org/shama/posix-cat.svg]][https://travis-ci.org/shama/posix-cat]
-[![NPM version][https://badge.fury.io/js/posix-cat.svg]][https://badge.fury.io/js/posix-cat]
+[![build status](https://secure.travis-ci.org/shama/posix-cat.svg)](https://travis-ci.org/shama/posix-cat)
+[![NPM version](https://badge.fury.io/js/posix-cat.svg)](https://badge.fury.io/js/posix-cat)
 
 <!-- [![browser support][https://ci.testling.com/shama/posix-cat.png]][https://ci.testling.com/shama/posix-cat] -->
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/shama.svg)](https://saucelabs.com/u/shama)
