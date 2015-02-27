@@ -1,6 +1,6 @@
 # [posix-cat](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html)
 
-A POSIX `cat` writtin in JavaScript.
+A POSIX `cat` in JavaScript.
 
 [![NPM](https://nodei.co/npm/posix-cat.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/posix-cat/)
 
