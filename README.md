@@ -5,7 +5,7 @@ A POSIX-like `echo` in JavaScript.
 [![NPM](https://nodei.co/npm/ix-echo.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ix-echo/)
 
 [![build status](https://secure.travis-ci.org/shama/ix-echo.svg)](https://travis-ci.org/shama/ix-echo)
-[![Build status](https://ci.appveyor.com/api/projects/status/jm3cp41m3j6mnji4)](https://ci.appveyor.com/project/shama/ix-echo)
+[![Build status](https://ci.appveyor.com/api/projects/status/xy837jnl2js8rg04)](https://ci.appveyor.com/project/shama/ix-echo)
 [![NPM version](https://badge.fury.io/js/ix-echo.svg)](https://badge.fury.io/js/ix-echo)
 
 <!-- [![browser support][https://ci.testling.com/shama/ix-echo.png]][https://ci.testling.com/shama/ix-echo] -->
