@@ -1,5 +1,5 @@
 var test = require('tape')
-var Echo = require('../posix-echo.js')
+var Echo = require('../index.js')
 
 function assertResult(s, cb) {
   var result = ''
