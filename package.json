@@ -1,5 +1,5 @@
 {
-  "name": "ix-echo",
+  "name": "posix-echo",
   "version": "1.0.0",
   "description": "A POSIX-like echo in JavaScript",
   "main": "index.js",
@@ -8,11 +8,12 @@
   },
   "scripts": {
     "test": "node test/test.js",
-    "test-browser": "zuul -- test/test.js"
+    "test-browser": "zuul -- test/test.js",
+    "maintain": "ixmaintain setup readme"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shama/ix-echo"
+    "url": "git://github.com/shama/posix-echo"
   },
   "keywords": [
     "posix",
@@ -21,9 +22,9 @@
   "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shama/ix-echo/issues"
+    "url": "https://github.com/shama/posix-echo/issues"
   },
-  "homepage": "https://github.com/shama/ix-echo",
+  "homepage": "https://github.com/shama/posix-echo",
   "dependencies": {
     "inherits": "^2.0.1",
     "readable-stream": "^1.0.33",
